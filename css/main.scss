@@ -191,26 +191,29 @@ footer {
   border-radius: 5%;
 }
 .btn_header {
-  margin-left: 14px;
+  margin-left: 15px;
 }
 
 .hero_content-image {
   margin-right: 11px;
-}
-.drops {
-  position: relative;
-}
-.hero_burger {
-  position: absolute;
-  margin-top: -60px;
-  margin-left: 30px;
 }
 //hero content
 .hero_content {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: .75;
+  flex: .7;
+}
+.hero_content-image {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.hero_content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 82px 0;
 }
 .title {
   font-size: 72px;
