@@ -7,15 +7,90 @@
 .form {
   display: flex;
 }
-
-.form_block-title {
-  color: #ffffff;
-  border-radius: 10%;
-  &:active {
+.side_order {
+  margin-right: 1rem;
+  width: 50%;
+  &:last-child {
+    margin-right: 0;
   }
 }
-.form_block-input {
-  &:active {
-    border-color: $yellow;
+.form_row {
+  display: flex;
+  margin-bottom: 1.1428571429rem;
+}
+.form_row-street {
+  flex-direction: column;
+}
+.form_block {
+  margin-right: 1rem;
+  flex: 1;
+  &:last-child {
+    margin-right: 0;
   }
+  
+}
+.form_block-title {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.5714285714rem;
+}
+.form_block-input {
+  border-radius: 0.3571428571rem;
+  height: 2.5rem;
+  padding: 0.7142857143rem 1.2857142857rem;
+  border: none;
+  &:focus {
+    border: $yellow solid 0.1428571429rem;
+    outline: none !important;
+  }
+}
+.name_phone {
+  //width: calc(32.8571428571rem/2);
+}
+.street {
+  //width: 32.8571428571rem;
+}
+.address {
+  //width: 7.1428571429rem;
+  //width: calc(32.8571428571rem/4);
+}
+.comment {
+  height: 7.7857142857rem;
+}
+.radiocontainer {
+  display: flex;
+}
+.radio {
+  display: none;
+}
+.radio-custom {
+  width: 1.0714285714rem;
+  height: 1.0714285714rem;
+  background: #ffffff;
+}
+.radio-custom-circle {
+  border-radius: 50%;
+}
+
+.radio:checked ~ .radio-custom {
+  &::after {
+    content: "";
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background: $red;
+  }
+}
+.radio:checked ~ .radio-custom-circle {
+  padding: 0.5714285714rem;
+}
+.label_check {
+  display: flex;
+}
+.form__submit-button {
+  border: none;
+}
+.form__submit-clear {
+  background: transparent;
+  border: none;
 }

@@ -1,0 +1,29 @@
+.burger_menu {
+  background: url(../../img/bg_menu.png) center center no-repeat / cover;
+  position: relative;
+  color: #fff;
+}
+.list_menu-burger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+.item_menu-burger {
+  display: flex;
+  transform: rotate(-90deg);
+  
+}
+.menu_burger-title {
+  position: relative;
+  font-size: 2.8571428571rem;
+}
+.menu_text {
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  display: none;
+}
