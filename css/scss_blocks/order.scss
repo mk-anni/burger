@@ -1,0 +1,21 @@
+.order {
+  background: url("../../img/bg_order.png") center center / cover no-repeat;
+}
+.title_order {
+  color: $yellow;
+}
+.form {
+  display: flex;
+}
+
+.form_block-title {
+  color: #ffffff;
+  border-radius: 10%;
+  &:active {
+  }
+}
+.form_block-input {
+  &:active {
+    border-color: $yellow;
+  }
+}
