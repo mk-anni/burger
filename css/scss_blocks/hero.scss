@@ -14,13 +14,20 @@
 }
 //header
 .header {
-  @include flex;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 0.9285714286rem;
   text-transform: uppercase;
 }
 .header_img {
   margin-top: 0.7142857143rem;
+  //width: 6.5714285714rem;
+  //height: 5.75rem;
+}
+.logo {
+  width: 6.5714285714rem;
+  height: 5.75rem;
 }
 .header_menu {
   display: flex;
@@ -29,7 +36,8 @@
 }
 
 .menu_list {
-  @include flex;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .point {
@@ -61,24 +69,30 @@
 
 .hero_content-image {
   margin-right: 0.7857142857rem;
+  width: 6.5714285714rem;
+  height: 4.9285714286rem;
 }
-//hero content
+
 .hero_content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  //align-items: center;
+  //justify-content: flex-start;
   flex: .7;
+  margin-left: 9.5rem;
 }
 .hero_content-image {
   display: flex;
   justify-content: center;
   height: 100%;
+  margin-right: 11.5rem;
 }
 .hero_content-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5.8571428571rem 0;
+  margin-top: 4.5rem;
+
 }
 
 .hero_content-title {

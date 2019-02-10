@@ -3,27 +3,62 @@
   position: relative;
   color: #fff; }
 
+.container_menu-burger {
+  padding-top: 3.9285714286rem; }
+
+.main_title {
+  font-family: gagalin;
+  font-size: 5.1428571429rem;
+  text-transform: uppercase; }
+
 .list_menu-burger {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
   padding: 0;
+  margin: 0;
   display: flex;
+  display: -ms-flexbox;
   overflow: hidden; }
 
 .item_menu-burger {
-  display: flex;
-  transform: rotate(-90deg); }
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu_bg {
+  position: relative;
+  width: 5.7142857143rem;
+  font-family: 'Gagalin', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 5.7142857143rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-transform: uppercase; }
 
 .menu_burger-title {
-  position: relative;
-  font-size: 2.8571428571rem; }
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 2.8571428571rem;
+  transform: rotate(-90deg);
+  transform: rotateZ(-90deg);
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0; }
 
 .menu_text {
-  opacity: 0;
+  max-width: 0rem;
   visibility: hidden;
-  padding: 0;
-  display: none; }
+  opacity: 0;
+  transition: 1s;
+  transition-property: max-width, opacity, visibility; }
+
+.menu_bg {
+  background: center center no-repeat / cover; }
 
 /*# sourceMappingURL=menu.css.map */

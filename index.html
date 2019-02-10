@@ -18,7 +18,9 @@
           <div class="without_button">
             <header class="header">
               <div class="header_img">
-                <img src="./icons/logo.svg" alt="">
+                  <svg class="logo">
+                      <use xlink:href="./sprite.svg#logo"></use>
+                    </svg>
               </div>
 
               <div class="header_menu">
@@ -74,20 +76,30 @@
           <ul class="best_list">
             <li class="best_point">
               <div class="best_img-wrap">
-                <img src="./img/meat.png" alt="Мясо" class="best_img">
+                <svg class="meat">
+                  <use xlink:href="./sprite.svg#meat"></use>
+                </svg>
               </div>
               <h3 class="best_point-title">100% свежее мясо</h3>
               <p class="best_description">Драма представляет собой деструктивный цикл. Анапест представляет собой
                 анапест. Ямб неравномерен.</p>
             </li>
             <li class="best_point">
-              <div class="best_img-wrap"><img src="./img/hand.png" alt="Ручная сборка" class="best_img"></div>
-              <h3 class="best_point-title">Ручная сборка</h3>
+              <div class="best_img-wrap">
+                  <svg class="meat">
+                      <use xlink:href="./sprite.svg#hand"></use>
+                    </svg>
+              </div>
+              <h3 class="best_point-title">Натуральные ингредиенты</h3>
               <p class="best_description">Драма представляет собой деструктивный цикл. Анапест представляет собой
                 анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
             </li>
             <li class="best_point">
-              <div class="best_img-wrap"><img src="./img/natural.png" alt="Натуральные ингредиенты" class="best_img"></div>
+              <div class="best_img-wrap">
+                  <svg class="meat">
+                      <use xlink:href="./sprite.svg#natural"></use>
+                    </svg>
+              </div>
               <h3 class="best_point-title">Ручная сборка</h3>
               <p class="best_description">Драма представляет собой деструктивный цикл. Анапест представляет собой
                 анапест.</p>
@@ -100,54 +112,87 @@
           <h1 class="title title_team">Команда</h1>
           <ul class="team_list">
             <li class="team_item">
-              <div class="element"></div>
-              <p>Дэниэл Редклиф</p>
+              <div class="emp_name">
+                <div class="element"></div>
+                <p>Дэниэл Редклиф</p>
+              </div>
+              <div class="hidden_team">
+                <img src="./img/team1.png" alt="" class="hidden_img">
+                <div class="hidden_text">
+                  <p class="proffesion">Оператор</p>
+                  <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                </div>
+              </div>
             </li>
             <li class="team_item">
-              <p>Дэниэл Редклиф</p>
+                <div class="emp_name">
+                    <div class="element"></div>
+                    <p>Ричард Джеймс</p>
+                  </div>
+              <div class="hidden_team">
+                <img src="./img/team1.png" alt="" class="hidden_img">
+                <div class="hidden_text">
+                  <p class="proffesion">Оператор</p>
+                  <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                </div>
+              </div>
             </li>
             <li class="team_item">
-              <p>Дэниэл Редклиф</p>
+                <div class="emp_name">
+                    <div class="element"></div>
+                    <p>Джейк Финн</p>
+                  </div>
+              <div class="hidden_team">
+                <img src="./img/team1.png" alt="" class="hidden_img">
+                <div class="hidden_text">
+                  <p class="proffesion">Оператор</p>
+                  <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                </div>
+              </div>
             </li>
             <li class="team_item">
-              <p>Дэниэл Редклиф</p>
+                <div class="emp_name">
+                    <div class="element"></div>
+                    <p>Николай Иванов</p>
+                  </div>
+              <div class="hidden_team">
+                <img src="./img/team1.png" alt="" class="hidden_img">
+                <div class="hidden_text">
+                  <p class="proffesion">Оператор</p>
+                  <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="section burger_menu">
         <div class="container container_menu-burger">
-          <p>меню</p>
+          <p class="main_title">меню</p>
           <ul class="list_menu-burger">
-            <li class="item_menu-burger">
-              <div class="menu_burger-text">
+            <li class="item_menu-burger vegan">
+              <div class="menu_bg" style="background-image:url('./img/menu_bg/first_bg.png')">
                 <p class="menu_burger-title">для мясоедов</p>
-                <p class="menu_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat quis,
-                  maxime ab incidunt rem esse architecto iste saepe corrupti itaque quod sed aperiam aliquam eveniet
-                  magnam doloremque repudiandae earum!</p>
               </div>
+              <p class="menu_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat quis,
+                maxime ab incidunt rem esse architecto iste saepe corrupti itaque quod sed aperiam aliquam eveniet
+                magnam doloremque repudiandae earum!</p>
             </li>
-            <li class="item_menu-burger">
-              <div class="menu_burger-text">
-                <div class="visible_title">
-                  <div class="menu_bg" style="background-image:url('./img/menu_bg/first_bg.png')"></div>
-                  <p class="menu_burger-title">вегетарианское</p>
-                </div>
-                <p class="menu_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat quis,
-                    maxime ab incidunt rem esse architecto iste saepe corrupti itaque quod sed aperiam aliquam eveniet
-                    magnam doloremque repudiandae earum!</p>
+            <li class="item_menu-burger vegan">
+              <div class="menu_bg" style="background-image:url('./img/menu_bg/second_bg.png')">
+                <p class="menu_burger-title">вегетарианское</p>
               </div>
+              <p class="menu_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat quis,
+                maxime ab incidunt rem esse architecto iste saepe corrupti itaque quod sed aperiam aliquam eveniet
+                magnam doloremque repudiandae earum!</p>
             </li>
-            <li class="item_menu-burger">
-              <div class="menu_burger-text">
-                <div class="visible_title">
-                  <div class="menu_bg" style="background-image:url('./img/menu_bg/second_bg.png')"></div>
-                  <p class="menu_burger-title">диетическое</p>
-                </div>
-                <p class="menu_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat quis,
-                    maxime ab incidunt rem esse architecto iste saepe corrupti itaque quod sed aperiam aliquam eveniet
-                    magnam doloremque repudiandae earum!</p>
+            <li class="item_menu-burger vegan">
+              <div class="menu_bg" style="background-image:url('./img/menu_bg/third_bg.png')">
+                <p class="menu_burger-title">диетическое</p>
               </div>
+              <p class="menu_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat quis,
+                maxime ab incidunt rem esse architecto iste saepe corrupti itaque quod sed aperiam aliquam eveniet
+                magnam doloremque repudiandae earum!</p>
             </li>
           </ul>
 
@@ -296,7 +341,7 @@
               </div>
               <div class="radiocontainer">
                 <label class="label_check">
-                  <input type="radio" class="radio" name="radio-test" />
+                  <input type="radio" class="radio" name="radio-test"/>
                   <div class="radio-custom radio-custom-circle"></div>
                   <span class="form_block-title">Потребуется сдача</span>
                 </label>
@@ -308,8 +353,8 @@
               </div>
               <div class="check_container">
                 <label class="label_check">
-                  <input type="checkbox" class="radio" name="radio-test" />
-                  <div class="radio-custom"></div>
+                  <input type="checkbox" class="checkbox" name="radio-test" />
+                  <div class="radio-custom radio-custom-checkbox"></div>
                   <span class="form_block-title">Не перезванивать</span>
                 </label>
               </div>
@@ -329,6 +374,31 @@
 
     </section>
     <footer class="footer">
+      <div class="left_footer">
+        <p class="address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
+        <div class="phone_wrap">
+            <div class="phone_img-container">
+              <svg class="phone_img">
+                  <use xlink:href="./sprite.svg#phone"></use>
+              </svg> 
+            </div> 
+            <address class="phone_number"><a href="tel:+78123771377" class="phone_link">+7 (812) 377-13-77</a></address>
+        </div>
+      </div>
+      <div class="right_footer">
+          <svg class="soc_img">
+              <use xlink:href="./sprite.svg#vk"></use>
+          </svg> 
+          <svg class="soc_img">
+              <use xlink:href="./sprite.svg#fb"></use>
+          </svg> 
+          <svg class="soc_img">
+              <use xlink:href="./sprite.svg#inst"></use>
+          </svg> 
+          <svg class="soc_img">
+              <use xlink:href="./sprite.svg#twitter"></use>
+          </svg> 
+      </div>
 
     </footer>
   </div>

@@ -1,3 +1,11 @@
+$red:#e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 @import "./fonts.scss";
 @import "./layout.scss";
 @import "./scss_blocks/hero.scss";

@@ -1,5 +1,6 @@
 html {
-  height: 100%; }
+  height: 100%;
+  font-size: 14px; }
 
 body {
   font-family: ubunt, Arial, Helvetica, sans-serif;
@@ -44,12 +45,12 @@ footer {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
-  width: 100%;
-  min-width: 940px; }
+  width: 100%; }
 
 .container {
-  width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 67.1428571429rem;
+  width: 95%; }
 
 .section {
   height: 100vh;
@@ -57,7 +58,7 @@ footer {
   justify-content: center;
   flex-direction: column; }
   .section_centred {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column; }
@@ -67,7 +68,7 @@ footer {
 
 .btn {
   padding: 0.7142857143rem;
-  background: #e45028;
+  background: red;
   color: #ffffff;
   border-radius: 10%; }
 

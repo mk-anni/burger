@@ -3,49 +3,46 @@
   background: #000000;
   position: absolute;
   display: flex;
-  padding: 0.5714285714rem 5.7142857143rem;
-}
+  padding: 0.5714285714rem 5.7142857143rem; }
+
 .left_footer {
   font-size: 1rem;
-  width: 50%;
-}
+  width: 50%; }
+
 .address {
   color: #ffffff;
-  margin-bottom: 0.5rem;
-}
-.phone_wrap {
-  display: flex;
-  //margin-right: 0.5rem;
+  margin-bottom: 0.5rem; }
 
-}
+.phone_wrap {
+  display: flex; }
+
 .phone_img-container {
-  padding-top: 0.05rem; 
-  align-items: center;
-}
+  padding-top: 0.05rem;
+  align-items: center; }
+
 .phone_img {
   width: 0.8571428571rem;
-  height: 0.7857142857rem;
-}
+  height: 0.7857142857rem; }
+
 .phone_number {
-  margin-left: 0.5rem;
-}
+  margin-left: 0.5rem; }
+
 .phone_link {
   color: #e45028;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700; }
 
-}
 .right_footer {
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-}
+  align-items: center; }
+
 .soc_img {
   width: 1.4285714286rem;
   height: 1.4285714286rem;
-  margin-right: 1.4285714286rem;
-  &:last-child {
-    margin-right: 0;
-  }
-}
+  margin-right: 1.4285714286rem; }
+  .soc_img:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=footer.css.map */
