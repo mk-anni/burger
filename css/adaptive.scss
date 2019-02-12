@@ -28,7 +28,7 @@
     font-size: 12px;
   }
 }
-@mixin $tablets() {
+@mixin tablets() {
   @media screen and (max-width: $tablets) {
     @content;
   }

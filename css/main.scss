@@ -6,6 +6,7 @@ $black: #2f3234;
 $tablets: 768px;
 $phones: 480px;
 
+@import "./adaptive.scss";
 @import "./fonts.scss";
 @import "./layout.scss";
 @import "./scss_blocks/hero.scss";
