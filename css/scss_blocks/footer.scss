@@ -15,8 +15,6 @@
 }
 .phone_wrap {
   display: flex;
-  //margin-right: 0.5rem;
-
 }
 .phone_img-container {
   padding-top: 0.05rem; 
@@ -30,7 +28,7 @@
   margin-left: 0.5rem;
 }
 .phone_link {
-  color: #e45028;
+  color: $red;
   font-style: normal;
   font-weight: 700;
 
@@ -41,11 +39,14 @@
   justify-content: flex-end;
   align-items: center;
 }
+.soc_img-link {
+  margin-right: rem(16px);
+}
 .soc_img {
   width: 1.4285714286rem;
   height: 1.4285714286rem;
-  margin-right: 1.4285714286rem;
-  &:last-child {
-    margin-right: 0;
+  fill: #5a5a5a;
+  &:hover {
+    fill: #ffffff;
   }
 }

@@ -6,7 +6,7 @@ body {
   font-family: ubunt, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.42em;
+  line-height: 1.42;
   height: 100%; }
 
 * {
@@ -70,7 +70,7 @@ footer {
   padding: 0.7142857143rem;
   background: red;
   color: #ffffff;
-  border-radius: 10%; }
+  border-radius: rem(10px); }
 
 .title {
   font-size: 5.1428571429rem;

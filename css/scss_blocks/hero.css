@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$yellow".
-        on line 99 of /Users/annamakarova/Documents/burger/css/scss_blocks/hero.scss
+        on line 108 of /Users/annamakarova/Documents/burger/css/scss_blocks/hero.scss
 
-94:   margin-top: 4.5rem;
-95: 
-96: }
-97: 
-98: .hero_content-title {
-99:   color: $yellow;
-100: }
-101: .hero_content-description {
-102:   color: #ffffff;
-103:   font-family: lifehack;
-104:   font-size: 4.2857142857rem;
+103:   margin-top: 4.5rem;
+104: 
+105: }
+106: 
+107: .hero_content-title {
+108:   color: $yellow;
+109: }
+110: .hero_content-description {
+111:   color: #ffffff;
+112:   font-family: lifehack;
+113:   font-size: 4.2857142857rem;
 
 Backtrace:
-/Users/annamakarova/Documents/burger/css/scss_blocks/hero.scss:99
+/Users/annamakarova/Documents/burger/css/scss_blocks/hero.scss:108
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 99 of /Users/annamakarova/Documents/burger/css/scss_blocks/hero.scss\A \A 94:   margin-top: 4.5rem;\A 95: \A 96: }\A 97: \A 98: .hero_content-title {\A 99:   color: $yellow;\A 100: }\A 101: .hero_content-description {\A 102:   color: #ffffff;\A 103:   font-family: lifehack;\A 104:   font-size: 4.2857142857rem;"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 108 of /Users/annamakarova/Documents/burger/css/scss_blocks/hero.scss\A \A 103:   margin-top: 4.5rem;\A 104: \A 105: }\A 106: \A 107: .hero_content-title {\A 108:   color: $yellow;\A 109: }\A 110: .hero_content-description {\A 111:   color: #ffffff;\A 112:   font-family: lifehack;\A 113:   font-size: 4.2857142857rem;"; }

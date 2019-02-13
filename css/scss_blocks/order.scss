@@ -24,6 +24,7 @@
 .form_block {
   margin-right: 1rem;
   flex: 1;
+  width: 100%;
   &:last-child {
     margin-right: 0;
   }
@@ -34,11 +35,15 @@
   font-size: 1rem;
   margin-bottom: 0.5714285714rem;
 }
+.money_back {
+  margin-right: rem(20px);
+}
 .form_block-input {
   border-radius: 0.3571428571rem;
   height: 2.5rem;
   padding: 0.7142857143rem 1.2857142857rem;
   border: none;
+  width: 100%;
   &:focus {
     border: $yellow solid 0.1428571429rem;
     outline: none !important;
@@ -70,6 +75,7 @@
   width: 1.0714285714rem;
   height: 1.0714285714rem;
   background: #ffffff;
+  margin-right: rem(8px);
 }
 .radio-custom-circle {
   border-radius: 50%;
@@ -98,9 +104,9 @@
   transform: rotate(-45deg);
   border-radius: 10%;
 }
-//.radio:checked ~ .radio-custom-circle {
-  //padding: 0.5714285714rem;
-//}
+.check_container {
+  margin-bottom: rem(15px);
+}
 .label_check {
   display: flex;
 }
