@@ -5,21 +5,25 @@
   position: relative;
 }
 .container_team {
-  width: 50%;
+  left: 50%;
   height: 100%;
   background-color: #2f3234;
   opacity: 0.93; 
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   flex-direction: column;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 0;
-  display: flex;
+  padding-left: rem(95px);
   overflow: hidden;
+  @include tablets() {
+    left: 0;
+    align-items: center;
+    padding: 0;
+  }
 }
 .title_team {
   //color: $yellow;
@@ -45,18 +49,24 @@
   margin-right: 0.5714285714rem;
   margin-top: 0.5rem;
 }
-.hidden_team {
+.hidden_block-team {
+ 
   display: flex;
   width: 23.5714285714rem;
   font-family: ubunt;
   font-size: 1rem;
-  height: 0;
+  //height: rem(87px);
   overflow: hidden;
+  flex: 0 0 auto;
+  height: 0;
+  display: none;
+}
+.hidden_team {
+  margin-right: 1.4285714286rem;
+  display: none;
 }
 .hidden_img {
-  margin-right: 1.4285714286rem;
-  
-  
+  border-radius: 50%;
 }
 .proffesion {
   margin-bottom: 1.4285714286rem;

@@ -32,10 +32,10 @@
   width: 6.5714285714rem;
   height: 5.75rem;
 }
-.header_menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.menu {
+  @include tablets() {
+    display: none;
+  }
 }
 
 .menu_list {
@@ -70,26 +70,26 @@
   margin-left: 1.0714285714rem;
   margin-right: rem(28px);
 }
-.humburger_menu {
-  display: none;
-  width: rem(24px);
-  height: rem(5px);
+.hum_menu {
+  width: 0;
+  height: rem(4px);
   border-radius: rem(5px);
   background: #ffffff;
   position: relative;
   width: 0;
-  @include tablets(){
-    display: flex;
-  }
+           
 }
 .hum_menu:after, .hum_menu:before {
   content: "";
   display: block;
-  width: rem(24px);
+  width: 0;
   height: rem(4px);
   border-radius: rem(5px);
   background: #ffffff;
   position: absolute;
+  @include tablets(){
+    width: rem(24px);
+  }
   
 }
 .hum_menu:after {
@@ -108,10 +108,11 @@
 
 .hero_content {
   display: flex;
-  //align-items: center;
-  //justify-content: flex-start;
   flex: .7;
-  //margin-left: 9.5rem;
+  @include tablets(){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .hero_content-title {
   line-height: 1;
@@ -124,6 +125,7 @@
   margin-right: rem(12px);
   flex: 0 0 auto;
   width: 471px;
+  align-items: center;
 }
 .hero_content-text {
   display: flex;
@@ -131,6 +133,9 @@
   justify-content: center;
   padding: 5.8571428571rem 0;
   margin-top: 4.5rem;
+  @include tablets(){
+    align-items: center;
+  }
 
 }
 
