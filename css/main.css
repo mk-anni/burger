@@ -625,10 +625,10 @@ footer {
   overflow: hidden; }
 
 .hidden_img {
-  margin-right: 1.4285714286rem; }
+  margin-right: rem(20px); }
 
 .proffesion {
-  margin-bottom: 1.4285714286rem;
+  margin-bottom: rem(20px);
   font-weight: 700; }
 
 .map {
