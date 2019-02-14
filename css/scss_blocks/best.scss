@@ -1,3 +1,8 @@
+.best-container {
+  @include phones () {
+    padding: 0 rem(20px);
+  }
+}
 .best {
   color: black;
 }
@@ -5,6 +10,9 @@
   display: flex;
   color: #000000;
   align-items: flex-start;
+  @include phones () {
+    flex-direction: column;
+  }
 
 }
 .best_img-wrap {
@@ -13,6 +21,9 @@
   margin-bottom: 2.1428571429rem;
   align-items: center;
   justify-content: center;
+  @include phones () {
+    margin-right: rem(27px);
+  }
   //width: 6.9285714286rem;
   //height: 6.3571428571rem;
 }
@@ -27,15 +38,29 @@
   &:last-child {
     margin: 0;
   }
+  @include phones () {
+    display: flex;
+    margin-bottom: rem(50px);
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
+
 .best_point-title {
   font-family: lifehack;
   font-size: 1.7142857143rem;
   text-align: center;
   margin-bottom: 2rem;
+  @include phones () {
+    text-align: start;
+  }
 }
 .best_description {
   font-size: 1rem;
   display: inline-block;
   text-align: center;
+  @include phones () {
+    text-align: start;
+  }
 }

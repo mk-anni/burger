@@ -11,7 +11,6 @@
   opacity: 0.93; 
   display: flex;
   justify-content: center;
-  
   flex-direction: column;
   position: absolute;
   right: 0;
@@ -26,7 +25,7 @@
   }
 }
 .title_team {
-  //color: $yellow;
+  color: $yellow;
 }
 
 .team_item {
@@ -45,25 +44,26 @@
 }
 .element {
   border: solid transparent 0.5rem;
-  border-top-color: yellow;
+  border-top-color: $yellow;
   margin-right: 0.5714285714rem;
   margin-top: 0.5rem;
 }
-.hidden_block-team {
- 
+
+.hidden_team {
+  //margin-right: 1.4285714286rem;
   display: flex;
   width: 23.5714285714rem;
   font-family: ubunt;
   font-size: 1rem;
-  //height: rem(87px);
-  overflow: hidden;
-  flex: 0 0 auto;
   height: 0;
   display: none;
 }
-.hidden_team {
-  margin-right: 1.4285714286rem;
-  display: none;
+.hidden_img-wrap {
+  display: flex;
+  width: rem(87px);
+  height: rem(87px);
+  //border-radius: 50%;
+  flex: 0 0 auto;
 }
 .hidden_img {
   border-radius: 50%;

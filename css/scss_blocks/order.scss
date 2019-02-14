@@ -6,12 +6,20 @@
 }
 .form {
   display: flex;
+  @include tablets() {
+    flex-direction: column;
+    margin-left: rem(10px);
+    margin-right: rem(10px);
+  }
 }
 .side_order {
   margin-right: 1rem;
   width: 50%;
   &:last-child {
     margin-right: 0;
+  }
+  @include tablets() {
+    width: 100%;
   }
 }
 .form_row {
@@ -62,8 +70,12 @@
 .comment {
   height: 7.7857142857rem;
 }
+
 .radiocontainer {
   display: flex;
+  @include tablets() {
+    justify-content: center;
+  }
 }
 .radio {
   display: none;
@@ -87,7 +99,7 @@
       width: 0.5rem;
       height: 0.5rem;
       border-radius: 50%;
-      background: red;
+      background: $red;
       margin-top: 0.285714285rem;
       margin-left: 0.285714285rem;   
 }
@@ -96,7 +108,7 @@
   position: absolute;
   width: 0.5714285714rem;
   height: 0.4285714286rem;
-  border: 0.2142857143rem solid red;
+  border: 0.2142857143rem solid $red;
   border-top: transparent;
   border-right: transparent;
   margin-top: 0.1428571429rem;
@@ -106,9 +118,19 @@
 }
 .check_container {
   margin-bottom: rem(15px);
+  display: flex;
+  @include tablets() {
+    justify-content: center;
+  }
 }
 .label_check {
   display: flex;
+}
+.buttons_wrap {
+  @include tablets() {
+    display: flex;
+    justify-content: center;
+  }
 }
 .form__submit-button {
   border: none;
