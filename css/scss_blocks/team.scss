@@ -1,5 +1,5 @@
 .section_centred-team {
-  background: url(../../img/bg_team.png) center center / cover no-repeat;
+  background: url(../img/bg_team.png) center center / cover no-repeat;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -54,19 +54,23 @@
   display: flex;
   width: 23.5714285714rem;
   font-family: ubunt;
-  font-size: 1rem;
+  font-size: 1rem; 
   height: 0;
   display: none;
 }
 .hidden_img-wrap {
   display: flex;
-  width: rem(87px);
-  height: rem(87px);
-  //border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
   flex: 0 0 auto;
+  overflow: hidden;
+  margin-right: rem(20px);
 }
 .hidden_img {
-  border-radius: 50%;
+  //border-radius: 50%;
 }
 .proffesion {
   margin-bottom: 1.4285714286rem;

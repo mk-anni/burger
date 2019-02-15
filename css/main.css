@@ -275,16 +275,12 @@ footer {
 
 .hero_content-image {
   margin-right: 0.7857142857rem;
-  width: 6.5714285714rem;
-  height: 4.9285714286rem; }
+  width: 6.5714285714rem; }
 
 .hero_content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: .7;
-  -ms-flex: .7;
-  flex: .7; }
+  display: flex; }
   @media screen and (max-width: 768px) {
     .hero_content {
       -webkit-box-orient: vertical;
@@ -306,7 +302,6 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100%;
   margin-right: 0.85714rem;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -346,6 +341,9 @@ footer {
   font-family: lifehack;
   font-size: 4.2857142857rem;
   line-height: 1em; }
+  @media screen and (max-width: 768px) {
+    .hero_content-description {
+      text-align: center; } }
 
 .section_centred-best {
   background: url(../img/bg2.png) center center/cover no-repeat; }
@@ -576,7 +574,7 @@ footer {
     transform: translate(-50%, -50%); }
 
 .order {
-  background: url("../../img/bg_order.png") center center/cover no-repeat; }
+  background: url("../img/bg_order.png") center center/cover no-repeat; }
 
 .title_order {
   color: #f9b43b; }
@@ -735,7 +733,7 @@ footer {
   max-width: 940px; }
 
 .section_centred-team {
-  background: url(../../img/bg_team.png) center center/cover no-repeat;
+  background: url(../img/bg_team.png) center center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,21 +808,27 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 6.21429rem;
-  height: 6.21429rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 7.14286rem;
+  height: 7.14286rem;
+  border-radius: 50%;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto; }
-
-.hidden_img {
-  border-radius: 50%; }
+  flex: 0 0 auto;
+  overflow: hidden;
+  margin-right: 1.42857rem; }
 
 .proffesion {
   margin-bottom: 1.4285714286rem;
   font-weight: 700; }
 
 .map {
-  background: url(../../img/bg_map.png) center center no-repeat/cover;
+  background: url(../img/bg_map.png) center center no-repeat/cover;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,7 +838,7 @@ footer {
   justify-content: flex-end; }
 
 .burger_menu {
-  background: url(../../img/bg_menu.png) center center no-repeat/cover;
+  background: url(../img/bg_menu.png) center center no-repeat/cover;
   position: relative;
   color: #fff; }
 
