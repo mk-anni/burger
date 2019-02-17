@@ -41,8 +41,11 @@
 .soc_img {
   width: 1.4285714286rem;
   height: 1.4285714286rem;
-  margin-right: 1.4285714286rem; }
+  margin-right: 1.4285714286rem;
+  fill: #5a5a5a; }
   .soc_img:last-child {
     margin-right: 0; }
+  .soc_img:hover {
+    fill: #ffffff; }
 
 /*# sourceMappingURL=footer.css.map */

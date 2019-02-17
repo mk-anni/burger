@@ -1,28 +1,31 @@
 .section_centred-team {
-  background: url(../../img/bg_team.png) center center / cover no-repeat;
+  background: url(../img/bg_team.png) center center / cover no-repeat;
   display: flex;
   align-items: flex-end;
   position: relative;
 }
 .container_team {
-  width: 50%;
+  left: 50%;
   height: 100%;
   background-color: #2f3234;
   opacity: 0.93; 
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 0;
-  display: flex;
+  padding-left: rem(95px);
   overflow: hidden;
+  @include tablets() {
+    left: 0;
+    align-items: center;
+    padding: 0;
+  }
 }
 .title_team {
-  //color: $yellow;
+  color: $yellow;
 }
 
 .team_item {
@@ -41,22 +44,35 @@
 }
 .element {
   border: solid transparent 0.5rem;
-  border-top-color: yellow;
+  border-top-color: $yellow;
   margin-right: 0.5714285714rem;
   margin-top: 0.5rem;
 }
+
 .hidden_team {
+  //margin-right: 1.4285714286rem;
   display: flex;
   width: 23.5714285714rem;
   font-family: ubunt;
-  font-size: 1rem;
+  font-size: 1rem; 
   height: 0;
-  overflow: hidden;
+  display: none;
 }
-.hidden_img {
+.hidden_img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+  flex: 0 0 auto;
+  overflow: hidden;
   margin-right: rem(20px);
 }
+.hidden_img {
+  //border-radius: 50%;
+}
 .proffesion {
-  margin-bottom: rem(20px);
+  margin-bottom: 1.4285714286rem;
   font-weight: 700;
 }

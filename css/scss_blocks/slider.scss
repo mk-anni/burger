@@ -1,0 +1,32 @@
+.section_slider {
+  background: linear-gradient(to top, #f9b43b 0%,
+   #eb8c38 48%,
+   #f9b43b 74%,
+   #f9b43b 100%);
+}
+.slider_menu {
+  display: flex;
+}
+.button_slider {
+  display: flex;
+  align-items: center;
+  width: rem(15px);
+  height: rem(29px);
+}
+
+.arrow_scroll-left {
+  transform: rotate(90deg);
+}
+.arrow_scroll-right {
+  transform: rotate(270deg);
+}
+.consist {
+  width: rem(90px);
+  height: rem(90px);
+  background: #f08b33;
+  border-radius: rem(10px);
+}
+.buns {
+  width: rem(46px);
+  height: rem(44px);
+}

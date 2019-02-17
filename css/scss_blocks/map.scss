@@ -1,4 +1,6 @@
 .map {
-  background: url(../../img/bg_map.png) center center no-repeat / cover;
+  background: url(../img/bg_map.png) center center no-repeat / cover;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
 }

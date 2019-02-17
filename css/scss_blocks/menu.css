@@ -52,6 +52,7 @@
   transform-origin: 0 0; }
 
 .menu_text {
+  padding-top: rem(10px);
   max-width: 0rem;
   visibility: hidden;
   opacity: 0;

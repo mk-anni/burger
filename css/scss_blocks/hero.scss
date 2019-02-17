@@ -11,6 +11,9 @@
 }
 .without_button {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 //header
 .header {
@@ -29,10 +32,10 @@
   width: 6.5714285714rem;
   height: 5.75rem;
 }
-.header_menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.menu {
+  @include tablets() {
+    display: none;
+  }
 }
 
 .menu_list {
@@ -62,29 +65,78 @@
 .point_link {
   color: inherit;
 }
-
+.header_button {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
 .btn_header {
   margin-left: 1.0714285714rem;
+  margin-right: rem(28px);
 }
-
+.hum_menu {
+  width: 0;
+  height: rem(4px);
+  border-radius: rem(5px);
+  background: #ffffff;
+  position: relative;
+  width: 0;
+  @include tablets(){
+    width: rem(24px);
+    margin-right: rem(17px);
+  }        
+}
+.hum_menu:after, .hum_menu:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: rem(4px);
+  border-radius: rem(5px);
+  background: #ffffff;
+  position: absolute;
+  @include tablets(){
+    width: rem(24px);
+    margin-right: rem(17px);
+  }
+  
+}
+.hum_menu:after {
+  top: 100%;
+  margin-top: rem(4px);
+}
+.hum_menu:before {
+  bottom: 100%;
+  margin-bottom: rem(4px);
+}
 .hero_content-image {
   margin-right: 0.7857142857rem;
   width: 6.5714285714rem;
-  height: 4.9285714286rem;
+  //height: 4.9285714286rem;
 }
 
 .hero_content {
   display: flex;
-  //align-items: center;
-  //justify-content: flex-start;
-  flex: .7;
-  margin-left: 9.5rem;
+  //flex: .7;
+  @include tablets(){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hero_content-title {
+  line-height: 1;
+  margin-bottom: 0;
 }
 .hero_content-image {
   display: flex;
   justify-content: center;
-  height: 100%;
-  margin-right: 11.5rem;
+  //height: 100%;
+  margin-right: rem(12px);
+  flex: 0 0 auto;
+  width: rem(471px);
+  align-items: center;
+}
+.hero_burger {
+  max-width: 100%;
 }
 .hero_content-text {
   display: flex;
@@ -92,6 +144,9 @@
   justify-content: center;
   padding: 5.8571428571rem 0;
   margin-top: 4.5rem;
+  @include tablets(){
+    align-items: center;
+  }
 
 }
 
@@ -103,6 +158,9 @@
   font-family: lifehack;
   font-size: 4.2857142857rem;
   line-height: 1em;
+  @include tablets(){
+    text-align: center;
+  }
 }
 .section_centred-best {
   background: url(../img/bg2.png) center center / cover no-repeat;
@@ -110,5 +168,7 @@
 .button_down {
   display: flex;
   justify-content: center;
-  flex: 0.09;
+  align-items: center;
+  flex: 0 0 auto;
+  height: rem(40px);
 }

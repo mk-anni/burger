@@ -2,17 +2,30 @@
   position: fixed;
   top: rem(55px);
   right: rem(47px);
+  @include tablets(){
+    display: none;
+  }
 }
 .fixed_menu-item {
   display: block;
   position: relative;
-  border: transparent solid 1px;
+  border: transparent solid rem(1px);
   width: rem(16px);
   height: rem(16px);
   border-radius: 50%;
   margin-bottom: rem(14px);
   &:last-child {
     margin-bottom: 0;
+  }
+  &:before {
+    content: "";
+    display: block;
+  position: relative;
+  border: transparent solid rem(1px);
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  margin-bottom: rem(14px);
   }
   &:hover {
     border-color: #ffffff;
