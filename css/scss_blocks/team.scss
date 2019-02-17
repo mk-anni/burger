@@ -57,6 +57,7 @@
   font-size: 1rem; 
   height: 0;
   overflow: hidden;
+  transition: height .3s;
 }
 .hidden_img-wrap {
   display: flex;
@@ -75,4 +76,11 @@
 .proffesion {
   margin-bottom: 1.4285714286rem;
   font-weight: 700;
+}
+.team_item.active .active_color {
+  color: $yellow;
+}
+.team_item.active .element {
+  border-top: transparent;
+  border-bottom-color: $yellow;
 }
