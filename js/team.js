@@ -10,7 +10,12 @@ item.addEventListener('click', e => {
     //открыт
     curItem.classList.remove('active');
     content.style.height = '0';
+    //закрыт
   } else {
+    Array.from(items).forEach(item => {
+      item.classList.remove('active');
+      item.querySelector('.hidden_team').style.height = 0;
+    })
     curItem.classList.add('active');
     content.style.height = `${regHeight}px`;
   }

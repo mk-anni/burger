@@ -23,6 +23,10 @@
 .button_slider-right {
   margin-left: rem(20px);
 }
+.arrow_scroll {
+  width: rem(15px);
+  height: rem(29px);
+}
 .arrow_scroll-left {
   transform: rotate(90deg);
 }
@@ -30,7 +34,21 @@
   transform: rotate(270deg);
 }
 .burger_slider {
-  justify-content: flex-start;
+  display: flex;
+  align-items: flex-start;
+  @include tablets() {
+    flex-direction: column;
+  }
+}
+.absolut_block {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include tablets() {
+    flex-direction: row;
+  }
+
 }
 .consist {
   width: rem(90px);
@@ -54,8 +72,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   opacity: 0.5;
-  justify-content: flex-start;
+  
 }
 .kkal_img {
   width: rem(60px);
@@ -64,19 +83,33 @@
 .kkal_text {
   text-align: center;
 }
+
 .title_slider {
   color: #ffffff;
   line-height: 1;
   margin-bottom: rem(55px);
+  @include tablets() {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .slider_description {
   color: #ffffff;
   font-size: rem(14px);
   margin-bottom: rem(125px);
+  @include tablets() {
+    text-align: center;
+    margin-bottom: rem(48px);
+  }
 }
 .slider_order {
   display: flex;
   align-items: baseline;
+  @include tablets() {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .slider_price {
   font-family: gagalin;
