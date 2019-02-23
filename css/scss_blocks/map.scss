@@ -1,6 +1,9 @@
-.map {
-  background: url(../img/bg_map.png) center center no-repeat / cover;
+.section_map {
   position: relative;
   display: flex;
   justify-content: flex-end;
+}
+.map {
+  flex: 1;
+  height: 100%;
 }

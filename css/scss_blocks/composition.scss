@@ -1,0 +1,81 @@
+.composition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  &:hover {
+    .composition_drop {
+      opacity: 1;
+    }
+    .composition_btn {
+      background: $red;
+    } 
+  }
+}
+.composition_btn {
+  width: rem(90px);
+  height: rem(90px);
+  background: #f29849;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: gagalin;
+  font-size: rem(14px);
+  border-radius: 5%;
+  cursor: pointer;
+}
+.buns_img {
+  width: rem(46px);
+  height: rem(44px);
+  margin-bottom: rem(10px);
+}
+.composition_drop {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.drop_list {
+  width: rem(272px);
+  height: rem(333px);
+  background: #ffffff;
+  opacity: 0.902;
+  border-radius: 5%;
+  padding: rem(18px) rem(28px);
+  font-size: rem(14px);
+  display: table;
+}
+.drop_items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: rem(7px);
+  display: table-row;
+  &:last-child {
+    margin-bottom: none;
+  }
+}
+.drops_img,
+.ingridient,
+.weight {
+  display: table-cell;
+  vertical-align: middle;
+}
+.drops_img {
+  margin-right: rem(20px);
+  width: rem(48px);
+  height: rem(42px);
+}
+.ingridient {
+  margin-right: rem(69px);
+  font-weight: 600;
+  width: rem(130px);
+  //width: 100%;
+  
+}
+.drop_items {
+  display: flex;
+  font-weight: 300;
+  justify-self: flex-end;
+}
