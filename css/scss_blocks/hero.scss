@@ -84,6 +84,7 @@
   @include tablets(){
     width: rem(24px);
     margin-right: rem(17px);
+    cursor: pointer;
   }        
 }
 .hum_menu:after, .hum_menu:before {
@@ -97,6 +98,7 @@
   @include tablets(){
     width: rem(24px);
     margin-right: rem(17px);
+    cursor: pointer;
   }
   
 }
