@@ -82,14 +82,39 @@ footer {
   }
 }
 .btn {       
-  padding: 0.7142857143rem;
+  padding: rem(10px);
   background: $red;
   color: #ffffff;
   border-radius: rem(10px);
 }
 .title {
-  font-size: 5.1428571429rem;
+  font-size: rem(72px);
   text-transform: uppercase;
   font-family: gagalin, Arial, Helvetica, sans-serif;
-  margin-bottom: 3.2142857143rem;
+  margin-bottom: rem(45px);
+}
+.close_mobile {
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.close {
+  background: #ec8468;
+  height: rem(20px);
+  width: rem(4px);
+  background: peru;
+  border-radius: 2px;
+  position: relative;
+  &::after {
+    display: block;
+  content: "";
+  height: rem(4px);
+  width: rem(20px);
+  background: #ec8468;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
 }

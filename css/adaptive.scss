@@ -1,6 +1,6 @@
 
 @function rem($px) {
-  @return $px / 14px + 0rem;
+  @return $px / 14px * 1rem;
 }
 .wrapper {
   min-width: 0px;
