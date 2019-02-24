@@ -123,9 +123,6 @@
     myMap.events.add('click', function(){
     myMap.behaviors.enable('scrollZoom')
 })
-<<<<<<< HEAD
-//$('.slider_list').slick();
-=======
->>>>>>> gh-pages
+$('.slider_list').slick();
   }
   document.addEventListener("DOMContentLoaded", ready);

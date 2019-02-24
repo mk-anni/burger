@@ -1,0 +1,43 @@
+.order_message {
+  position: fixed;
+  top: -10000px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  height: 0;
+}
+.activeOM {
+  top: 0;
+  opacity: 1;
+  height: auto;
+}
+.message_block {
+  height: rem(108px);
+  width: rem(195px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #ffffff;
+}
+.message_text {
+padding-bottom: rem(22px);
+font-size: rem(14px);
+}
+.btn_message {
+  font-size: rem(13px);
+  text-transform: uppercase;
+  width: rem(96px);
+  height: rem(35px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

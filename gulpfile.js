@@ -13,15 +13,17 @@ task( 'clean', function() {
     .pipe( rm() )
 });
 
-function copy() {
-  return src('src/css/main.scss').pipe(dest('dist'))
-};
+(
+  function copy() {
+    return src('src/css/main.scss').pipe(dest('dist'))
+  };)
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
   'src/css/main.scss'
 ];
-task( 'styles', function() {
+
+task('styles', function() {
   //return src( 'src/css/main.scss')
   return src('src/css/main.scss')
   .pipe(concat('main.scss'))

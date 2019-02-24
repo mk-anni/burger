@@ -1,6 +1,7 @@
 .menu_mobile {
   position: fixed;
-  top: -1000px;
+  height: 0;
+  top: -10000px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -12,14 +13,15 @@
   justify-content: center;
   
 }
-.hum_menu.activeMB .menu_mobile {
+.activeMB {
   top: 0;
   opacity: 1;
+  height: auto;
 }
 .close_mobile {
   position: absolute;
   top: rem(10px);
-  right: rem(400px);
+  right: rem(30px);
 }
 .close_mb {
   height: rem(30px);
@@ -28,6 +30,10 @@
     width: rem(30px);
     height: rem(6px);
   }
+}
+.mobile_list {
+  width: rem(220px);
+  height: rem(240px);
 }
 .mobile_items {
   margin-bottom: rem(10px);
