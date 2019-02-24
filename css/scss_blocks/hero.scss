@@ -1,0 +1,176 @@
+//hero
+.hero {
+  background: url(../img/bg.png) center center / cover no-repeat;
+  //height: 100%;
+  //width: 100%;
+}
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.without_button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+//header
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9285714286rem;
+  text-transform: uppercase;
+}
+.header_img {
+  margin-top: 0.7142857143rem;
+  //width: 6.5714285714rem;
+  //height: 5.75rem;
+}
+.logo {
+  width: 6.5714285714rem;
+  height: 5.75rem;
+}
+.menu {
+  @include tablets() {
+    display: none;
+  }
+}
+
+.menu_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.point {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  &:last-child{
+    &::after {
+      display: none;
+    }
+  }
+  &:after {
+    content: "";
+    width: 0.4285714286rem;
+    height: 0.4285714286rem;
+    border-radius: 50%;
+    background: #ffffff;
+    display: inline-block;
+    margin: 0 0.7142857143rem;
+  }
+}
+.point_link {
+  color: inherit;
+}
+.header_button {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.btn_header {
+  margin-left: 1.0714285714rem;
+  margin-right: rem(28px);
+}
+.hum_menu {
+  width: 0;
+  height: rem(4px);
+  border-radius: rem(5px);
+  background: #ffffff;
+  position: relative;
+  width: 0;
+  @include tablets(){
+    width: rem(24px);
+    margin-right: rem(17px);
+    cursor: pointer;
+  }        
+}
+.hum_menu:after, .hum_menu:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: rem(4px);
+  border-radius: rem(5px);
+  background: #ffffff;
+  position: absolute;
+  @include tablets(){
+    width: rem(24px);
+    margin-right: rem(17px);
+    cursor: pointer;
+  }
+  
+}
+.hum_menu:after {
+  top: 100%;
+  margin-top: rem(4px);
+}
+.hum_menu:before {
+  bottom: 100%;
+  margin-bottom: rem(4px);
+}
+.hero_content-image {
+  margin-right: 0.7857142857rem;
+  width: 6.5714285714rem;
+  //height: 4.9285714286rem;
+}
+
+.hero_content {
+  display: flex;
+  //flex: .7;
+  @include tablets(){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hero_content-title {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.hero_content-image {
+  display: flex;
+  justify-content: center;
+  //height: 100%;
+  margin-right: rem(12px);
+  flex: 0 0 auto;
+  width: rem(471px);
+  align-items: center;
+}
+.hero_burger {
+  max-width: 100%;
+}
+.hero_content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5.8571428571rem 0;
+  margin-top: 4.5rem;
+  @include tablets(){
+    align-items: center;
+  }
+
+}
+
+.hero_content-title {
+  color: $yellow;
+}
+.hero_content-description {
+  color: #ffffff;
+  font-family: lifehack;
+  font-size: 4.2857142857rem;
+  line-height: 1em;
+  @include tablets(){
+    text-align: center;
+  }
+}
+.section_centred-best {
+  background: url(../img/bg2.png) center center / cover no-repeat;
+}
+.button_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  height: rem(40px);
+}
