@@ -123,5 +123,6 @@
     myMap.events.add('click', function(){
     myMap.behaviors.enable('scrollZoom')
 })
+//$('.slider_list').slick();
   }
   document.addEventListener("DOMContentLoaded", ready);

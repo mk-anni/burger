@@ -1,0 +1,28 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "course_2",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-anni/burger.git"
+  },
+  "keywords": [
+    "anna"
+  ],
+  "author": "anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mk-anni/burger/issues"
+  },
+  "homepage": "https://github.com/mk-anni/burger#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
