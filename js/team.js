@@ -1,3 +1,4 @@
+function ready() {
 const items = document.querySelectorAll(".team_item");
 
 for (const item of items) {
@@ -27,3 +28,5 @@ item.addEventListener('click', e => {
   //content.style.overflow = 'visible';
 });
 }
+};
+document.addEventListener("DOMContentLoaded", ready);

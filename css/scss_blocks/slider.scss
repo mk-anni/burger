@@ -5,12 +5,14 @@
    #f9b43b 74%,
    #f9b43b 100%);
    display: flex;
-   align-items: center;
-   justify-content: center;
+   align-items: center !important;
+   justify-content: center !important;
 }
+
 .container_slider {
-  width: 90%;
-  height: rem(475px);
+  max-width: 940px;
+  width: 90% !important;
+  //height: rem(475px);
   display: flex;
   position: relative;
   @include tablets() {
@@ -48,10 +50,12 @@
   display: flex;
   @include tablets() {
     flex-direction: column;
+    margin-top: rem(50px);
   }
 }
 .slider_col {
   flex: 1;
+  
   &-img {
     margin-right: rem(28px); 
     display: flex;
@@ -83,6 +87,9 @@
 .slider_info {
   display: flex;
   align-items: flex-end;
+  @include tablets() {
+    justify-content: center;
+  }
 }
 .slider_price {
   font-family: gagalin;
@@ -114,6 +121,8 @@
   @include tablets() {
     top: 0;
     right: 0;
+    bottom: auto;
+    left: auto;
   }
 }
 .kkal_img {

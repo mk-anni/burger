@@ -4,6 +4,7 @@
   display: flex;
   padding: 0.5714285714rem 5.7142857143rem;
   position: absolute;
+  //flex: 1;
   @include phones() {
     flex-direction: column;
     height: rem(116px);

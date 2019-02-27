@@ -478,16 +478,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important; }
 
 .container_slider {
-  width: 90%;
-  height: 33.92857rem;
+  max-width: 940px;
+  width: 90% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,7 +535,8 @@ footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 3.57143rem; } }
 
 .slider_col {
   -webkit-box-flex: 1;
@@ -581,6 +582,11 @@ footer {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .slider_info {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .slider_price {
   font-family: gagalin;
@@ -625,7 +631,9 @@ footer {
   @media screen and (max-width: 768px) {
     .kkal {
       top: 0;
-      right: 0; } }
+      right: 0;
+      bottom: auto;
+      left: auto; } }
 
 .kkal_img {
   width: 4.28571rem;
@@ -898,6 +906,117 @@ footer {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.section_video {
+  background: url(../img/bg_video.png) center center/cover no-repeat; }
+
+.video_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%; }
+
+.video_wrap {
+  width: 47.14286rem;
+  height: 26.42857rem;
+  position: relative; }
+
+.video {
+  width: 47.14286rem;
+  height: 26.42857rem; }
+
+.controls {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #3e3e3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 47.14286rem;
+  height: 2.5rem;
+  padding-left: 1.42857rem;
+  padding-right: 1.42857rem; }
+
+.controls_play {
+  cursor: pointer; }
+
+.play .play_img-begin {
+  display: none; }
+
+.play .close_video {
+  display: block; }
+
+.play_img-begin {
+  display: block;
+  width: 1.14286rem;
+  height: 1.57143rem;
+  fill: #626262; }
+
+.close_video {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+  display: none; }
+
+.controls_range {
+  width: 31.71429rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+
+.controls_range-volume {
+  width: 4.14286rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+
+.progress {
+  width: 100%;
+  height: 0.28571rem;
+  background-color: #626262;
+  -webkit-appearance: none;
+  cursor: pointer; }
+  .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0.92857rem;
+    height: 0.92857rem;
+    border-radius: 50%;
+    background-color: #626262; }
+
+.controls_volume {
+  cursor: pointer; }
+
+.volume_img {
+  width: 1.28571rem;
+  height: 1.57143rem;
+  fill: #626262; }
+
 .fixed_menu {
   position: fixed;
   top: 3.92857rem;
@@ -940,6 +1059,10 @@ footer {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+.active {
+  border-color: #ffffff;
+  cursor: pointer; }
 
 .order {
   background: url("../img/bg_order.png") center center/cover no-repeat; }

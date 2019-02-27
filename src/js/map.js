@@ -118,11 +118,11 @@
             .add(myPlacemarkWithContent3)
             .add(myPlacemarkWithContent4);
 
+            myMap.behaviors.disable('scrollZoom');
     });
-    myMap.behaviors.disable('scrollZoom')
-    myMap.events.add('click', function(){
-    myMap.behaviors.enable('scrollZoom')
+   
+    
 })
-$('.slider_list').slick();
+
   }
   document.addEventListener("DOMContentLoaded", ready);

@@ -1,3 +1,4 @@
+function ready() {
 const btnOrder = document.getElementById('btn_message');
 const orderM = document.getElementById('order_message');
 const closeM = document.getElementById('message');
@@ -11,3 +12,5 @@ closeM.addEventListener('click', (e) =>{
   e.preventDefault();
   orderM.classList.remove('activeOM');
 })
+};
+document.addEventListener("DOMContentLoaded", ready);
