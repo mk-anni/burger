@@ -1,11 +1,11 @@
 function ready() {
 
 $('.slider_list').slick({
-    prevArrow: $('arrow_scroll-left');
-    nextArrow: $('arrow_scroll-right');
+    prevArrow: $('arrow_scroll-left'),
+    nextArrow: $('arrow_scroll-right')
   });
   $('#fullpage').fullpage({
-    menu: menu;
+    menu: "#menu"
   });
   
 
