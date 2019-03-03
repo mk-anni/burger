@@ -1,16 +1,28 @@
 function ready() {
-const btnOrder = document.getElementById('btn_message');
-const orderM = document.getElementById('order_message');
-const closeM = document.getElementById('message');
 
-btnOrder.addEventListener('click', (e) =>{
-  e.preventDefault();
-  //console.log('hi');
-  orderM.classList.add('activeOM');
-})
-closeM.addEventListener('click', (e) =>{
-  e.preventDefault();
-  orderM.classList.remove('activeOM');
-})
+  const review = document.querySelectorAll(".reviews_item");
+  const review_window = document.querySelector(".review_window");
+  const close_review = document.querySelector(".close_review");
+
+
+  for (const item of review) {
+    var button = item.querySelector('.review_link');
+
+    button.addEventListener('click', e => {
+      const el = e.currentTarget;      
+      console.log("review_window:", review_window);     
+      review_window.classList.add('activeReview');
+
+      //review_window.style.top = '200px';    
+      
+
+    });
+  }
+
+  
+  close_review.addEventListener('click', e => {           
+    review_window.classList.remove('activeReview');
+    });
+
 };
 document.addEventListener("DOMContentLoaded", ready);
