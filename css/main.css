@@ -909,6 +909,17 @@ footer {
 .section_video {
   background: url(../img/bg_video.png) center center/cover no-repeat; }
 
+@media screen and (max-width: 480px) {
+  .title_video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; } }
+
 .video_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -929,10 +940,18 @@ footer {
   width: 47.14286rem;
   height: 26.42857rem;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .video_wrap {
+      width: 32.85714rem;
+      height: 18.14286rem; } }
 
 .video {
   width: 47.14286rem;
   height: 26.42857rem; }
+  @media screen and (max-width: 480px) {
+    .video {
+      width: 32.85714rem;
+      height: 18.14286rem; } }
 
 .controls {
   position: absolute;
@@ -953,6 +972,10 @@ footer {
   height: 2.5rem;
   padding-left: 1.42857rem;
   padding-right: 1.42857rem; }
+  @media screen and (max-width: 480px) {
+    .controls {
+      width: 32.85714rem;
+      height: 2.07143rem; } }
 
 .controls_play {
   cursor: pointer; }
@@ -1603,7 +1626,7 @@ footer {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 25rem;
+  top: 15rem;
   right: 31.5rem; }
 
 .window_title {

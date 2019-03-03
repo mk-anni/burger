@@ -1,6 +1,13 @@
 .section_video {
   background: url(../img/bg_video.png) center center / cover no-repeat;
 }
+.title_video {
+  @include phones() {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+}
 .video_container {
   display: flex;
   flex-direction: column;
@@ -12,11 +19,19 @@
   width: rem(660px);
   height: rem(370px);
   position: relative;
+  @include phones() {
+    width: rem(460px);
+    height: rem(254px);
+   }
 }
 .video {
   width: rem(660px);
   height: rem(370px);
   //position: relative;
+  @include phones() {
+    width: rem(460px);
+    height: rem(254px);
+   }
 }
 .controls {
   position: absolute;
@@ -31,6 +46,10 @@
   height: rem(35px);
   padding-left: rem(20px);
   padding-right: rem(20px);
+  @include phones() {
+    width: rem(460px);
+    height: rem(29px);
+   }
 }
 .controls_play {
   cursor: pointer;
